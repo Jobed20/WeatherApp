@@ -1,5 +1,17 @@
 .App{
-  background-image: url(./Assets/snow.jpg);
+  background-image: url(./Assets/cloud-rain.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-sunny{
+  background-image: url(./Assets/sunny.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;

@@ -3,14 +3,11 @@ import './App.css';
 import axios from 'axios';
 import WeatherCard from './Components/WeatherCard';
 
-
-
 function App() {
 
   const [latAndLong, setlatAndLong] = useState()
   const [apiData, setapiData] = useState({});
   
-
   useEffect(() => {
     const success = pos => {
       const longit = pos.coords.longitude;
@@ -34,7 +31,8 @@ function App() {
   
   console.log(apiData);
   return (
-    <div className="App">
+    <div className=
+    {(typeof apiData.main != "undefined") ? ((apiData.main?.temp > 28) ? 'App-sunny' :'App') : 'App'}>
          <WeatherCard apiData={apiData} />
     </div>  
   )
