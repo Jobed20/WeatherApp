@@ -5,7 +5,7 @@ import {faCloud, faTemperatureFull, faDroplet, faWind} from '@fortawesome/free-s
 const WeatherCard = ({apiData}) => {
   
   const [celcius, setcelcius] = useState(true)
-  const temF = (((apiData.main?.temp ) * 1.8) + 32).toFixed(1);
+  const tempFarenheit = (((apiData.main?.temp ) * 1.8) + 32).toFixed(1);
   
   return (
     <div className='weather-card'>
@@ -29,7 +29,7 @@ const WeatherCard = ({apiData}) => {
           <p> <FontAwesomeIcon icon={faWind}/> Wind: {apiData.wind?.speed} m/s</p>
         </li>
         <li>
-          <p> <FontAwesomeIcon icon={faTemperatureFull}/> Temperature: {celcius ? `${apiData.main?.temp} °C` : `${temF} °F`} </p>
+          <p> <FontAwesomeIcon icon={faTemperatureFull}/> Temperature: {celcius ? `${apiData.main?.temp} °C` : `${tempFarenheit} °F`} </p>
         </li>
         <button onClick={() => setcelcius(!celcius)} className='BTN'>Change °F/°C</button>
       </ul>
