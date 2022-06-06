@@ -1,0 +1,43 @@
+.App{
+  background-image: url(./Assets/snow.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  list-style: none;  
+}
+
+.weather-card{
+  background-color: rgba(6, 6, 6, 0.6);;
+  color: rgb(253, 254, 255);
+  width: 200px;
+  min-height: 300px;
+  border-radius: 15px;
+  padding: 15px;
+  transform: scale(1.5);
+  border: 3px solid black;
+  
+  
+}
+
+h1{
+  text-align: center;
+}
+
+.BTN{
+  background-color: rgb(233, 221, 221);
+  margin: 10PX;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px black;
+}
+
+li{
+  margin-bottom: 10px;
+}
